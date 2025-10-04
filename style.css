@@ -6,7 +6,7 @@ h1 {
 }
 /*AUTHOR*/
 h2 {
-   font: Arial, sans-serif;
+   font:'Lavishly Yours', cursive;"
 }
 /*POEM*/
 body {
@@ -26,10 +26,23 @@ body {
    margin:auto;
    padding:20px;
 }
+/*QUOTE*/
+.quote {
+   font-family: 'Lavishly Yours', cursive;
+   font-size: 3em;
+   margin-top:20px;
+   margin-bottom:20px;
+   background:pink;
+border-radius: 30px;
+color:whitesmoke
+}
 /*FOOTER*/
 .footer1 {
    font-family: 'Hurricane', cursive;
    font-size: 2em;
+   padding:3px;
+   margin:auto;
+
 }
 /* LINK */
 a {
@@ -47,5 +60,6 @@ a:hover {
 .footer2 {
    font-family: cambria, cochin, georgia, times, 'times new roman', serif;
    font-size: 18px;
-   padding:30px
+   padding:20px;
+   margin:auto;
 }
