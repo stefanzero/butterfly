@@ -1,15 +1,16 @@
+/*TITLE*/
 h1 {
    font: 4em "Monsieur La Doulaise", cursive;
    color:#E695A2;
    margin-bottom:-25px;
 }
-
+/*AUTHOR*/
 h2 {
    font: Arial, sans-serif;
 }
-
+/*POEM*/
 body {
-   font-family:cormorant garamond, cambria, cochin, georgia, times, 'times new roman', serif;
+   font-family:cambria, cochin, georgia, times, 'times new roman', serif;
    font-size: 1.1em;
    text-align:center;
    background:
@@ -18,23 +19,22 @@ body {
    background-size:cover;
    background-position: center;
    background-repeat:no-repeat;
-
-
 }
-
 .poem {
-   width:90%;
-   max-width: 600px;
+   width:100%;
+   max-width: 700px;
    margin:auto;
    padding:20px;
 }
-
+/*FOOTER*/
 .footer1 {
-   font-family: cambria, cochin, georgia, times, 'times new roman', serif;
-   font-size: 1.5em;
+   font-family: 'Hurricane', cursive;
+   font-size: 2em;
 }
 /* LINK */
 a {
+   padding:30px;
+   font-family: 'cambria', 'cochin', 'georgia', 'times', 'times new roman', serif;
    color:pink;
 }
 a:visited {
@@ -43,9 +43,9 @@ a:visited {
 a:hover {
    color:white;
 }
-}
+/* SECOND FOOTER */
 .footer2 {
    font-family: cambria, cochin, georgia, times, 'times new roman', serif;
-   font-size: 15px;
-   padding:40px
+   font-size: 18px;
+   padding:30px
 }
