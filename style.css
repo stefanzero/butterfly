@@ -19,6 +19,8 @@ body {
    background-size:cover;
    background-position: center;
    background-repeat:no-repeat;
+   line-height:1.1;
+   margin:0;
 }
 .poem {
    width:100%;
@@ -33,11 +35,12 @@ body {
    margin:40px;
    background:#E695A2;
 border-radius: 30px;
-color:whitesmoke
+color:whitesmoke;
+   line-height: 1.4;
 }
 img {
-   width:400px;
-   height:500px;
+   width:420px;
+   height:550px;
    display:block;
    margin:auto;
    border-radius:200px;
