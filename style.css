@@ -15,27 +15,25 @@ body {
    background:
   linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("butterfly.jpeg");
    padding:20px;
-   background-size:contain;
+   background-size:cover;
    background-position: center;
    background-repeat:no-repeat;
 
 
 }
-footer {
-   font-family: cambria, cochin, georgia, times, 'times new roman', serif;
-   font-size: 1.5em;
 
-}
 .poem {
    width:90%;
    max-width: 600px;
    margin:auto;
    padding:20px;
 }
-.author {
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font size: 5em;
+
+.footer1 {
+   font-family: cambria, cochin, georgia, times, 'times new roman', serif;
+   font-size: 1.5em;
 }
+/* LINK */
 a {
    color:pink;
 }
@@ -45,12 +43,9 @@ a:visited {
 a:hover {
    color:white;
 }
-@media (max-width: 600px) {
-   body {
-      font-size:0.95em;
-      width: 95%;
-      .poem {
-         padding: 10px;
-         width: 95%;
-      }
-   } }
+}
+.footer2 {
+   font-family: cambria, cochin, georgia, times, 'times new roman', serif;
+   font-size: 15px;
+   padding:40px
+}
