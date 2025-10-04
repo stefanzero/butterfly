@@ -15,7 +15,7 @@ body {
    background:
   linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("butterfly.jpeg");
    padding:20px;
-   background-size:cover;
+   background-size:contain;
    background-position: center;
    background-repeat:no-repeat;
 
@@ -27,7 +27,8 @@ footer {
 
 }
 .poem {
-   width:40%;
+   width:90%;
+   max-width: 600px;
    margin:auto;
    padding:20px;
 }
@@ -44,3 +45,12 @@ a:visited {
 a:hover {
    color:white;
 }
+@media (max-width: 600px) {
+   body {
+      font-size:0.95em;
+      width: 95%;
+      .poem {
+         padding: 10px;
+         width: 95%;
+      }
+   } }
