@@ -18,6 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
       rel="stylesheet"
     >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="./style.css?v=2">
   </head>
 
@@ -65,28 +78,31 @@
         Im your sweet little butterfly.<br>
       </p>
 
-      <blockquote class="quote">
-        "Butterflies appear when angels are near."
-      </blockquote>
+      <!-- a blockquote is only for extended quotes, not short ones -->
+      <p class="quote">"Butterflies appear when angels are near."</p>
 
-      <img src="Manalei.JPG" alt="Baby Manalei">
+      <figure>
+        <div class="img-container">
+          <img src="Manalei.JPG" alt="Baby Manalei">
+        </div>
 
-      <section class="Manalei">
-        In Loving Memory of Manalei Telesia Eliani Vaafuti
-      </section>
+        <figcaption class="Manalei">
+          In Loving Memory of Manalei Telesia Eliani Vaafuti
+        </figcaption>
+      </figure>
 
-      <button>
-        <a
-          href="https://thegrieftoolbox.com/artwork/little-butterfly-poem-about-baby-loss"
-          target="_blank"
-          >Little Butterfly Poem</a
-        >
-      </button>
+      <!-- this is a link and not a button -->
+      <a
+        href="https://thegrieftoolbox.com/artwork/little-butterfly-poem-about-baby-loss"
+        target="_blank"
+        class="link"
+        >Little Butterfly Poem</a
+      >
     </main>
 
-    <div class="divider"></div>
+    <div class="divider" role="separator"></div>
 
-    <footer class="footer2">
+    <footer class="footer">
       &#169; 2025 Kiren Yvonne Nand (Dev/Mission Cohort #33)
     </footer>
   </body>

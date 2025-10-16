@@ -1,17 +1,37 @@
 :root {
-  --color: #e695a2;
+  /* use hue, saturation, and lightness, since this makes it easier
+  to create a lighter or darker color by changing the lightness */
+  /* --color: #e695a2; */
+  --color: hsl(350, 62%, 74%);
+  --h1-lightness-factor: 0.8;
 }
+/*POEM*/
 body {
-  font-size:
-    16px Arial,
-    sans-serif;
+  /* font-family:cambria, cochin, georgia, times, 'times new roman', serif; */
+  /* 16px Roboto, */
+  font:
+    16px "Playwrite AU TAS",
+    cursive;
+  text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url("butterfly.jpeg");
+  padding: 20px;
+  padding: 1.25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1.1;
+  margin: 0;
 }
 /*TITLE*/
 h1 {
   font-family: "Monsieur La Doulaise", cursive;
   font-size: clamp(2.5rem, 12vw, 6rem);
-  color: #e695a2;
+  /* color: var(--color); */
+  color: hsl(from var(--color) h s calc(l * var(--h1-lightness-factor)));
   /* margin-bottom: -25px; */
+  margin-bottom: 0;
   box-shadow:
     0 0 25px rgba(255, 255, 255, 0.7),
     0 0 60px rgba(255, 255, 255, 0.95);
@@ -24,24 +44,14 @@ h1:hover {
 }
 /*AUTHOR*/
 h2 {
-  font: "Lavishly Yours", cursive;
+  font-family: "Lavishly Yours", cursive;
+  font-size: 3rem;
+  margin: 2rem 0;
 }
-
-/*POEM*/
-body {
-  /* font-family:cambria, cochin, georgia, times, 'times new roman', serif; */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-    url("butterfly.jpeg");
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  line-height: 1.1;
-  margin: 0;
+main {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0 auto;
 }
 /* there is no poem class? */
 .poem {
@@ -55,7 +65,10 @@ body {
 .quote {
   font-family: "Lavishly Yours", cursive;
   font-size: 2.5em;
-  margin: 50px;
+  padding: 0.5rem 3rem;
+  display: inline-block;
+  /* margin: 50px; */
+  margin: 1rem 0;
   background: #e695a2;
   border-radius: 20px;
   color: whitesmoke;
@@ -71,19 +84,29 @@ body {
     0 0 60px rgba(255, 255, 255, 0.95);
 }
 /*IMAGE*/
+figure {
+  margin: 2rem auto 0 auto;
+}
+figcaption {
+  margin: 1rem 0;
+}
+.img-container {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 26rem;
+}
 img {
-  width: 420px;
-  height: 550px;
-  display: block;
-  margin: auto;
-  border-radius: 200px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16rem;
   box-shadow:
     0 0 25px rgba(230, 149, 162, 0.7),
     0 0 40px rgba(255, 240, 245, 0.89);
   transition:
     transform 0.3s,
     box-shadow 0.3s;
-  margin-bottom: 40px;
 }
 img:hover {
   transform: scale(1.03);
@@ -94,13 +117,14 @@ img:hover {
 
 /*IN LOVING MEMORY*/
 .Manalei {
-  display: block;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
   background: transparent;
   font-family: "arizona", cursive;
   color: whitesmoke;
   font-size: 2em;
-  /* 0 0 20px #e695a2 */
-  /*0 0 20px hsl(350, 62%, 74%) */
+  /* decrease lightness of the shadow so it is more readable */
   text-shadow:
     0 0 10px hsl(350, 62%, 50%),
     0 0 20px hsl(350, 62%, 50%),
@@ -116,33 +140,38 @@ img:hover {
 }
 
 /* LINK */
-a {
-  padding: 30px;
-  font-family:
-    "cambria", "cochin", "georgia", "times", "times new roman", serif;
-  color: #e695a2;
+.link {
+  display: inline-block;
+  padding: 0.8rem;
+  /* color: #e695a2; */
+  color: var(--color);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 1rem;
   text-align: center;
   margin: auto;
   font-size: 20px;
   text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 1.25rem auto;
   transition: color 0.3s;
 }
 a:visited {
   color: palevioletred;
 }
 a:hover {
-  color: white;
+  /* color: white; */
+  color: hsl(from var(--color) h s calc(l * var(--h1-lightness-factor)));
+  background-color: #f0f0f0;
 }
 
 /*FOOTER */
 .footer {
-  font-family: cambria, cochin, georgia, times, "times new roman", serif;
-  font-size: 18px;
-  color: grey;
-  padding: 20px;
-  margin-top: 40px;
+  /* font-family: cambria, cochin, georgia, times, "times new roman", serif; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #505050;
+  padding: 1.25rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 .divider {
