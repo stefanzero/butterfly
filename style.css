@@ -1,133 +1,156 @@
+:root {
+  --color: #e695a2;
+}
+body {
+  font-size:
+    16px Arial,
+    sans-serif;
+}
 /*TITLE*/
 h1 {
-   font: 5em "Monsieur La Doulaise", cursive;
-   color:#E695A2;
-   margin-bottom:-25px;
-     box-shadow:
-   0 0 25px rgba(255,255,255,0.7),
-   0 0 60px rgba(255,255,255,0.95);
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: clamp(2.5rem, 12vw, 6rem);
+  color: #e695a2;
+  /* margin-bottom: -25px; */
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.7),
+    0 0 60px rgba(255, 255, 255, 0.95);
 }
 h1:hover {
-   transform: scale(1.03);
-   box-shadow:
-   0 0 35px rgba(230,149,162,0.9),
-   0 0 60px rgba(255,255,255,0.95);
-   }
+  transform: scale(1.03);
+  box-shadow:
+    0 0 35px rgba(230, 149, 162, 0.9),
+    0 0 60px rgba(255, 255, 255, 0.95);
+}
 /*AUTHOR*/
 h2 {
-   font:'Lavishly Yours', cursive;
+  font: "Lavishly Yours", cursive;
 }
 
 /*POEM*/
 body {
-   font-family:cambria, cochin, georgia, times, 'times new roman', serif;
-   font-size: 1.2em;
-   text-align:center;
-   background:
-  linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("butterfly.jpeg");
-   padding:20px;
-   background-size:cover;
-   background-position: center;
-   background-repeat:no-repeat;
-   line-height:1.1;
-   margin:0;
+  /* font-family:cambria, cochin, georgia, times, 'times new roman', serif; */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url("butterfly.jpeg");
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1.1;
+  margin: 0;
 }
+/* there is no poem class? */
 .poem {
-   width:100%;
-   max-width: 700px;
-   margin:auto;
-   padding:20px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
 }
 
 /*QUOTE*/
 .quote {
-   font-family: 'Lavishly Yours', cursive;
-   font-size: 2.5em;
-   margin:50px;
-   background:#E695A2;
-   border-radius: 20px;
-   color:whitesmoke;
-   line-height: 1.4;
-   box-shadow:
-   0 0 25px rgba(255,255,255,0.7),
-   0 0 60px rgba(255,255,255,0.95);
+  font-family: "Lavishly Yours", cursive;
+  font-size: 2.5em;
+  margin: 50px;
+  background: #e695a2;
+  border-radius: 20px;
+  color: whitesmoke;
+  line-height: 1.4;
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.7),
+    0 0 60px rgba(255, 255, 255, 0.95);
 }
 .quote:hover {
-   transform: scale(1.03);
-   box-shadow:
-   0 0 35px rgba(230,149,162,0.9),
-   0 0 60px rgba(255,255,255,0.95);
-   }
+  transform: scale(1.03);
+  box-shadow:
+    0 0 35px rgba(230, 149, 162, 0.9),
+    0 0 60px rgba(255, 255, 255, 0.95);
+}
 /*IMAGE*/
 img {
-   width:420px;
-   height:550px;
-   display:block;
-   margin:auto;
-   border-radius:200px;
-   box-shadow:
-   0 0 25px rgba(230,149,162,0.7),
-   0 0 40px rgba(255,240,245,0.89);
-   transition: transform 0.3s, box-shadow 0.3s;
-   margin-bottom:40px;
+  width: 420px;
+  height: 550px;
+  display: block;
+  margin: auto;
+  border-radius: 200px;
+  box-shadow:
+    0 0 25px rgba(230, 149, 162, 0.7),
+    0 0 40px rgba(255, 240, 245, 0.89);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  margin-bottom: 40px;
 }
 img:hover {
-   transform: scale(1.03);
-   box-shadow:
-   0 0 35px rgba(230,149,162,0.9),
-   0 0 60px rgba(255,255,255,0.95);
+  transform: scale(1.03);
+  box-shadow:
+    0 0 35px rgba(230, 149, 162, 0.9),
+    0 0 60px rgba(255, 255, 255, 0.95);
 }
 
 /*IN LOVING MEMORY*/
 .Manalei {
-   display:block;
-   background:transparent;
-   font-family: 'arizona', cursive;
-   color:whitesmoke;
-font-size: 2em;
-text-shadow: 0 0 10px #E695A2, 0 0 20px #E695A2, 0 0 30px #E695A2, 0 0 40px #E695A2;
-   margin-bottom:20px;
+  display: block;
+  background: transparent;
+  font-family: "arizona", cursive;
+  color: whitesmoke;
+  font-size: 2em;
+  /* 0 0 20px #e695a2 */
+  /*0 0 20px hsl(350, 62%, 74%) */
+  text-shadow:
+    0 0 10px hsl(350, 62%, 50%),
+    0 0 20px hsl(350, 62%, 50%),
+    0 0 30px hsl(350, 62%, 50%),
+    0 0 40px hsl(350, 62%, 50%);
+  margin-bottom: 20px;
 }
 .Manalei:hover {
-   transform: scale(1.03);
-   box-shadow:
-   0 0 35px rgba(230,149,162,0.9),
-   0 0 60px rgba(255,255,255,0.95);
-   }
+  transform: scale(1.03);
+  box-shadow:
+    0 0 35px rgba(230, 149, 162, 0.9),
+    0 0 60px rgba(255, 255, 255, 0.95);
+}
 
 /* LINK */
 a {
-   padding:30px;
-   font-family: 'cambria', 'cochin', 'georgia', 'times', 'times new roman', serif;
-   color:#E695A2;
-   text-align: center;
-   margin: auto;
-   font-size: 20px;
-   text-decoration: none;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   transition: color 0.3s;
+  padding: 30px;
+  font-family:
+    "cambria", "cochin", "georgia", "times", "times new roman", serif;
+  color: #e695a2;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: color 0.3s;
 }
 a:visited {
-   color:palevioletred;
+  color: palevioletred;
 }
 a:hover {
-   color:white;
+  color: white;
 }
 
 /*FOOTER */
 .footer {
-   font-family: cambria, cochin, georgia, times, 'times new roman', serif;
-   font-size: 18px;
-   color: grey;
-   padding:20px;
-   margin-top:40px;
-   text-align: center;;
+  font-family: cambria, cochin, georgia, times, "times new roman", serif;
+  font-size: 18px;
+  color: grey;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 .divider {
-   width: 100%;
-   height: 2px;
-   background-color: #E695A2;
-   box-shadow:0 0 10px #E695A2, 0 0 20px #E695A2;
-   margin: 30px 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e695a2;
+  box-shadow:
+    0 0 10px #e695a2,
+    0 0 20px #e695a2;
+  margin: 30px 0;
 }
